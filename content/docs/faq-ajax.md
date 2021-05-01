@@ -1,24 +1,24 @@
 ---
 id: faq-ajax
-title: AJAX and APIs
+title: AJAX और APIs
 permalink: docs/faq-ajax.html
 layout: docs
 category: FAQ
 ---
 
-### How can I make an AJAX call? {#how-can-i-make-an-ajax-call}
+### मैं AJAX कॉल कैसे कर सकता हूं? {#how-can-i-make-an-ajax-call}
 
-You can use any AJAX library you like with React. Some popular ones are [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), and the browser built-in [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+आप किसी भी AJAX लाइब्रेरी का उपयोग रिएक्ट के साथ कर सकते हैं। यह कुछ लोकप्रिय AJAX लाइब्रेरी हैं [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), और ब्राउज़र अंतर्निहित [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-### Where in the component lifecycle should I make an AJAX call? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
+### कौम्पोनॅन्ट जीवन चक्र में मुझे AJAX कॉल कहां करना चाहिए? {#where-in-the-component-lifecycle-should-i-make-an-ajax-call}
 
-You should populate data with AJAX calls in the [`componentDidMount`](/docs/react-component.html#mounting) lifecycle method. This is so you can use `setState` to update your component when the data is retrieved.
+आपको AJAX कॉल्स के साथ डेटा को [`componentDidMount`](/docs/react-component.html#mounting) लाइफ़ साइकिल विधि में पॉप्युलेट करना चाहिए। ऐसा तब होता है जब आप डेटा पुनर्प्राप्त होने पर अपने कौम्पोनॅन्ट को अपडेट करने के लिए `setState` का उपयोग कर सकते हैं।
 
-### Example: Using AJAX results to set local state {#example-using-ajax-results-to-set-local-state}
+### उदाहरण: AJAX के उपयोग से लोकल स्टेट सेट होती है {#example-using-ajax-results-to-set-local-state}
 
-The component below demonstrates how to make an AJAX call in `componentDidMount` to populate local component state. 
+नीचे दिया गया कौम्पोनॅन्ट दर्शाता है कि लोकल कौम्पोनॅन्ट स्टेट को पॉप्युलेट करने के लिए `componentDidMount` में AJAX कॉल कैसे करें।
 
-The example API returns a JSON object like this:
+यह उदाहरण API इस तरह एक JSON object देता है:
 
 ```
 {
@@ -83,7 +83,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-Here is the equivalent with [Hooks](https://reactjs.org/docs/hooks-intro.html): 
+यहाँ हुक के साथ बराबर है: [Hooks](https://reactjs.org/docs/hooks-intro.html): 
 
 ```js
 function MyComponent() {
